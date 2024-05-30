@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>5월30일 폼 만들기 연습1</title>
+    <title>설문조사</title>
 </head>
 <body>
     <h1>설문조사</h1>
-    <form action="a.jsp">
-        <p>이름
-        <input type="text" name="name" required>
-        </p>
-        <p>이메일
-        <input type="text" name="name"placeholder="love@example.com" required>
+    <form action="" method="get">
+        <p>
+        <label for="name">이름
+        <input type="text" name="name" required autofocus>
+        </label></p>
+        <p>
+        <label for="email">이메일
+        <input type="text" name="email"placeholder="love@example.com" required>
+        </label>
         </p>
    
-   <div>
+
     <p>나이</p>
     <label><input type="radio" name="age" value="teenage">10대</label>
     <label><input type="radio"name="age" value="twenties">20대</label>
@@ -23,17 +26,19 @@
     <label><input type="radio"name="age" value="fourties">40대</label>
     <label><input type="radio"name="age" value="fities">50대</label>
     <label><input type="radio"name="age" value="overSixties">60대이상</label>
-   </div>
+   
    <div>
-    <p>당신의 취미를 선택하세요 (복수선택가능)</p>
-    <label><input type="checkbox"name="program" value="html">html</label>
-    <label><input type="checkbox"name="program" value="javascript">javascript</label>
-    <label><input type="checkbox"name="program" value="css">css</label>
+    <p>당신의 선호하는 언어를 선택하세요 (복수선택가능)</p>
+    <label><input type="checkbox"name="language" value="html">html</label>
+    <label><input type="checkbox"name="languge" value="javascript">javascript</label>
+    <label><input type="checkbox"name="languge" value="css">css</label>
+
    </div>
    <div>
     <textarea name="content" rows="5"cols="40" required placeholder="하고 싶은 말을 남겨주세요~"></textarea>
    </div>
-   <input type="submit" value="전송"> 
+   <input type="submit" value="제출"> 
+   <input type="reset" value="취소">
 </form>
 </body>
 </html>

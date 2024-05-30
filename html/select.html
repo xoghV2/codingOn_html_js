@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="register.jsp" method="post">
+        <fieldset>
+            <legend>수강신청</legend>
+            <p>
+                <label for="id">학과번호</label>
+                <!-- readonly 수정할 수 없게 만듦 input에 값이 나오게하는법 value -->
+                <input type="text" id="cid" value="c1234" readonly>
+                <p>
+                    <label for="major">학과</label>
+                    <select name="major" id="major">
+                        <option value="software" selected>소프트웨어학과</option>
+                        <option value="mechanic">기계공학과</option>
+                        <option value="eletronic">전기전자공학과</option>
+                        <option value="architect">건축공학과</option>
+                    </select>
+                </p>
+            </p>
+        </fieldset>
+        <div>
+            <button type="submit">신청하기</button>
+        </div>
+    </form>
+</body>
+</html>
