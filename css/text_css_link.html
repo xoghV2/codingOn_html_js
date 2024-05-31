@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문단 정렬 관련 스타일</title>
+    <style>
+       
+        p{
+          /* text-align: left; */
+          /* 양쪽 정렬(양쪽 공간이 넘치는것 없이 딱 맞음) */
+          text-align: justify;
+          /* 문장과 문장 사이의 간격 조절 행간조절 */
+          line-height: 1.5;
+        }
+        /* id선택자 (selector):#을 앞에 붙임. 좀 더 특징적인 스타일을 개별적으로 줘야할때 사용 */
+        #p1{
+            color:rgb(0, 119, 255);
+          
+        }
+        #p2{
+            font-family: 굴림체;
+        }
+        /* class선택자: 점을 앞에 붙힘 같은 스타일을 여러개 중복해서 사용해야 할 때  */
+        .coffee{
+            font-weight: bold;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <h2>아메리카노</h2>
+    <p id="p1">
+    커피의 일종인 <span>에스프레소</span>에 뜨거운 물을 희석시켜 만든 음료
+    <span class="coffee">아메리카노</span>라고 줄여서 불리지만 정확한 명칭은 카페 <span class="coffee">아메리카노(Caffé Americano)</span>이다.
+    </p>
+    <p id="p2">
+        대한민국의 카페에서 자주 접할 수 있는 메뉴고 선호층도 가장 두터운 편이나,
+        맛에 대해서는 호불호가 굉장히 크게 나뉜다. 좋아하는 사람들은 안 마시면 금단증상까지 호소할 정도이나, 
+        설탕이나 우유 등이 들어간 달짝지근한 맛에 익숙한 사람들 혹은 단 것을 싫어해도 커피 또한 좋아하지 않는 사람들은 
+        '그냥 물이나 주스를 마시지 무슨 이런 쓴 맹물 커피를 돈 주고 사먹냐'고 생각할 수도 있는 맛이기도 하다. 
+       <span class="coffee">블랙 커피</span>  특성상 원두빨과 바리스타 실력을 타는 것도 커피를 꺼리게 되는 요소 중 하나이다.
+    </p>
+</body>
+</html>

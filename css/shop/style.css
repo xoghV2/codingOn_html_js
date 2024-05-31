@@ -1,0 +1,15 @@
+table{
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+th,td{
+    border:1px solid #ccc;
+    padding: 10px;
+}
+thead{
+    background-color: #eee;
+}
+img{
+    border:1px solid blue;
+    border-radius: 5px;
+}
