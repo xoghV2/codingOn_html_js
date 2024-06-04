@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="0603.css">
+</head>
+<body>
+    <div id="wrap">
+    <form action="">
+        <fieldset>
+           <legend>수강신청</legend>
+           <ul>
+            <li>
+                <label for="studentNumber">학과번호</label>
+                <input type="text" name="studentNumber" id="studentNumber">
+            </li>
+            <li>
+                <label for="major">학과</label>
+              <select name="major" id="major">
+                <optgroup label="공과대학"></optgroup>
+                <option value="major_soft">소프트웨어학과</option>
+                <option value="major_computer">컴퓨터공학과</option>
+                <option value="major_eletronic">전기공학과</option>
+                <option value="major_mechanic">기계공학과</option>
+            
+              
+                <optgroup label="상경대학"></optgroup>
+                <option value="major_calcu">회계학과</option>
+                <option value="major_manage">경영학과</option>
+                <option value="major_economy">경제학과</option>
+    
+            </select>
+            
+            </li>
+           </ul> 
+        </fieldset>
+      
+           <button>로그인</button>
+        <button vlaue="reset">취소하기</button>
+
+    </form>
+</div>
+</body>
+</html>

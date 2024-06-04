@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#container{
+    width:1000px;
+    margin:0 auto;
+}
+
+header{
+    width:100%;
+    /* width 포함되는 것: 테두리 + 패딩 /마진은 상관없다 마진은 테두리 영역 밖 */
+    height: 100px;
+    border:1px solid #ccc;
+    background-color: lightblue;
+}
+section{
+    width:650px;
+    height:600px;
+    border:1px solid #ccc;
+    background-color: lightgreen;
+    float:left;
+}
+aside{
+    width:350px;
+    height:600px;
+    border:1px solid #ccc;
+    float:right;
+    background-color: lightpink;
+    
+}
+footer{
+
+    height:100px;
+    border: 1px solid #ccc;
+    clear:both;
+    background-color: lightgoldenrodyellow;
+    padding:10px;
+}

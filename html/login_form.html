@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로그인폼</title>
+    <style>
+        *{
+            margin:0 auto;
+            padding:0;
+            box-sizing: border-box;
+        }
+        #container{
+            width:300px;
+            height:300px;
+        }
+        header{
+            margin:10px 0;
+            text-align: center;
+        }
+        form{
+            
+            border:2px solid #999;
+           
+        }
+        p{
+            display:inline-block;
+            padding:10px;
+        }
+        label{
+            float:left;
+            width:80px;
+        }
+        
+        .btn{
+            display: inline-block;
+            margin:5px 10px ;
+        }
+    </style>
 </head>
 <body>
+<div id="container">
+    <header>
     <h2>로그인폼</h2>
+    </header>
     <!-- 
         전송방식 
         post : 보안유지,보이지않음
@@ -23,7 +59,12 @@
             <input type="password" name="password" required 
             placeholder="비밀번호를 입력하세요.">           
         </p>
+
+        <div class="btn">
         <button type="submit">로그인</button>
+        <button type="reset">취소하기</button>
+    </div>
     </form>
+</div>
 </body>
 </html>

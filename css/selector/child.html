@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연결선택자(후손, 자식)</title>
+</head>
+<style>
+    #content {
+        width:600px;
+        border:2px solid orangered;
+        padding:5px 10px;
+    }
+    /* 맨 처음 글꼴이 없을경우 두번째 또,없을경우 세번째로 적용된다. 글꼴의 이름에 띄어쓰기 있을경우 따옴표를 붙인다. */
+    #content h2{
+        font-family: 'Times New Roman', Times, serif;
+    }
+    /* 연결 선택 (후손)- 요소 간  공백이 있으면 하위의 모든 요소에 적용 */
+    #content p{
+        color: blue;
+    }
+    /* 연결선택 (자식) - 요소 간 > 가 있으면 바로 밑에 있는 요소만 적용됨 */
+    #content > p{
+        color:red;
+        font-family:굴림체;
+        background-color: paleturquoise;
+    }
+</style>
+<body>
+<div id="content">
+    <h2>Cafe Americano</h2>
+    <p>
+    커피의 일종인 <span>에스프레소</span>에 뜨거운 물을 희석시켜 만든 음료
+    아메리카노라고 줄여서 불리지만 정확한 명칭은 카페 아메리카노(Caffé Americano)이다.
+    </p>
+        <div>
+            <p>
+                대한민국의 카페에서 자주 접할 수 있는 메뉴고 선호층도 가장 두터운 편이나,
+                맛에 대해서는 호불호가 굉장히 크게 나뉜다. 좋아하는 사람들은 안 마시면 금단증상까지 호소할 정도이나, 
+                설탕이나 우유 등이 들어간 달짝지근한 맛에 익숙한 사람들 혹은 단 것을 싫어해도 커피 또한 좋아하지 않는 사람들은 
+                '그냥 물이나 주스를 마시지 무슨 이런 쓴 맹물 커피를 돈 주고 사먹냐'고 생각할 수도 있는 맛이기도 하다. 
+                블랙 커피 특성상 원두빨과 바리스타 실력을 타는 것도 커피를 꺼리게 되는 요소 중 하나이다.
+            </p>
+        </div>
+   
+</div>
+</body>
+</html>
