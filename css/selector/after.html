@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상선택자 :: </title>
+    <style>
+        ul li{
+            margin:12px;
+        }
+        /* after는 요소 내용 뒤에 나타날 컨탠츠 추가
+           before는 요소 내용 앞에 나타날 컨텐츠 추가
+        */
+        ul .new::after{
+            content:"NEW ";
+            background-color: yellow;
+            border:2px solid yellow;
+            margin:0 10px;
+            padding:0 5px;
+            /* 1em 상대크기- 16px, 0.8 x 16 = 12.8px  */
+            font-size: 0.8em;
+            border-radius: 10px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <h2>상품 목록</h2>
+    <ul>
+        <li>불닭볶음면</li>
+        <li class="new">까르보불닭볶음면</li>
+        <li>신라면</li>
+        <li>열라면</li>
+        <li>참깨라면</li>
+        <li>너구리</li>
+    </ul>
+</body>
+</html>

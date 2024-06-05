@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position 속성</title>
+    <style>
+        *{
+            background-color: #333;
+        }
+       
+        .box1{
+            width:100px;
+            background-color: lightblue;
+            padding:20px;
+            float:left;
+            margin-right: 10px;
+        }
+        .box2{
+            width:200px;
+            background-color: lightcoral;
+            padding:20px;
+            float:left;
+            position:relative;
+            top:30px;
+            left:-50px;
+            /* position: relative 이전 요소에 연결되어 배치된다. */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+</body>
+</html>

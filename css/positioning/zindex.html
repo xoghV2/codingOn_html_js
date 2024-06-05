@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션 z-index</title>
+    <style>
+        *{
+            background-color: #333;
+        }
+        div{
+            width:100px;
+            height:100px;
+            position: absolute;
+        }
+        /* z-index 속성 > 숫자가 크면 위로 배치되고, 적으면 아래로 배치 됨 */
+        .box1{
+            top:50px;
+            left:50px;
+            background-color: tomato;
+            z-index: 10;
+        }
+        .box2{
+            top:70px;
+            left:100px;
+            background-color: yellow;
+            z-index: -10;
+        }
+        .box3{
+            top:120px;
+            left:70px;
+            background-color: yellowgreen;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</body>
+</html>

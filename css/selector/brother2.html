@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>형제 선택자 가상선택자</title>
+    <style>
+        /* 가상 선택자  콜론이 접두어인 명령어 */
+    form{
+        width:500px;
+    }
+    input:disabled{
+        background-color: #ddd;
+        border:1px solid #ccc;
+    }
+    /* 체크된 인풋에 가장 가까운 요소에 스타일 적용 */
+    input:checked+span{
+        color:blue;
+    }
+    input:focus{
+        background-color: orange;
+    }
+    /* a만 사용해도 됨 */
+    a:link, a:visited{
+        text-decoration: none;
+        color:black;
+    }
+    /* 마우스가 올라갔을 때 스타일 적용 */
+    a:hover{
+        text-decoration: underline;
+    }
+    /* 마우스로 클랙 했을 때 스타일 적용 */
+    a:active{
+        background-color: red;
+    }
+</style>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>사용자 정보</legend>
+            <label for="name">이름<input type="text" disabled></label><br>
+            <label for="name">이메일<input type="emaill"></label>
+        </fieldset>
+        <fieldset>
+            <legend>신청과목</legend>
+            <label>
+                <input type="radio" name="hobby" value="movie"><span>영화감상</span>
+            </label>
+            <label>
+                <input type="radio" name="hobby" value="game">게임
+            </label>
+            <label>
+                <input type="radio" name="hobby" value="sports">운동
+            </label> 
+        </fieldset>
+    </form>
+    <h3>추천 링크</h3>
+    <a href="https://www.naver.com" target="_blank">네이버</a>
+    <a href="https://google.com" target="_blank">구글</a>
+</body>
+</html>

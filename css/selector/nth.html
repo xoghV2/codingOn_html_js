@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth선택자</title>
+    <style>
+        
+        table{
+            border:1px solid #ccc;
+            border-collapse: collapse;
+        }
+        table td{
+            border:1px solid #ccc;
+        }
+        /* tr요소 중에서 n번째 요소 선택 
+            n=0에서 시작함 
+        */
+        table tr:nth-of-type(2n){
+            background-color: #eee;
+        }
+        table tr:nth-of-type(2n+1){
+            background-color: lightblue;
+        }
+        /* table tr:nth-child(2n){
+            background-color: wheat;
+        }
+        table tr:nth-child(2n+1){
+            background-color: skyblue;
+        } */
+    </style>
+</head>
+<body>
+    <h2>건강에 좋은 식품</h2>
+    <table>
+        <tr>
+            <td>블루베리</td>
+        </tr>
+        <tr>
+            <td>마늘</td>
+        </tr>
+        <tr>
+            <td>토마토</td>
+        </tr>
+        <tr>
+            <td>오리</td>
+        </tr>
+        <tr>
+            <td>미나리</td>
+        </tr>
+        <tr>
+            <td>아보카도</td>
+        </tr>
+    </table>
+</body>
+</html>

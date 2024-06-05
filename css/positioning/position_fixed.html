@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션 fixed</title>
+    <style>
+        *{
+            background-color: #333;
+            color:lightcyan;
+            
+        }
+        body{
+            height:2000px;
+        }
+        #content{
+            width:600px;
+        }
+        #fix{
+           
+            width:100px;
+            height:100px;
+            border-radius: 50px;
+            position:fixed;
+            top:50px;
+            right:50px;
+            background-image: url('xogh1.jpg');
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <p>fixed : fixed 값을 사용하는 요소 역시 absolute값을 사용하는 요소처럼<br>
+            문서흐름과는 상관없이 좌표로 위치를 결정하지만, 기준이 되는 요소가<br>
+            부모 요소가 아니라 브라우저 창이 기준이 된다.
+        </p>
+    </div>
+    <div id="fix">
+   
+    </div>
+</body>
+</html>

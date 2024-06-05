@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position 실습 과제</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            height:2000px;
+        }
+        #container{
+            margin:10px;
+            width:500px;
+            height:500px;
+            border: 5px solid black;
+            /* 부모 요소를 relative를 하면 부모가 기준이 됨  */
+            position:relative;
+              
+            text-align: center;
+            
+        }
+        #container div{
+            width:100px;
+            height:100px;
+            line-height: 100px;
+        }
+        .item1{
+            position:absolute;
+            top:30px;
+            left:50px;
+            background-color: orange;
+        }
+        .item2{
+            position:absolute;
+            bottom:100px;
+            right:30px;
+            background-color: yellow;
+        }
+        .item3{
+           
+            position:fixed;
+            top:100px;
+            right:100px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item1">item1</div>
+        <div class="item2">item2</div>
+        <div class="item3">item3</div>
+    </div>
+    
+</body>
+</html>
