@@ -7,6 +7,7 @@
     <style>
         *{
             background-color: #333;
+            height:1500px;
         }
         #wrap{
             width:200px;
@@ -36,9 +37,10 @@
             right:0;
         }
         #box4{
-            position:absolute;
-            left:-20px;
-            top:-20px;
+            position:fixed;
+            left:-30px;
+            top:100px;
+            background-color: red !important;
         }
         #box5{
             position:absolute;
@@ -49,6 +51,7 @@
     </style>
 </head>
 <body>
+    <!-- 스타일 우선 순위 :인라인 > 내부  > 외부스타일 -->
     <div id="wrap">
         <div id="box1"></div>
         <div id="box2"></div>

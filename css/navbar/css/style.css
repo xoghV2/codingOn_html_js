@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/* 공통 스타일  */
+
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+    color:#f1f1f1;
+}
+ul li{
+    list-style: none;
+}
+#container{
+    width:1000px;
+    margin: 0 auto;
+}
+header{
+    height:80px;
+    background-color: navy;
+}
+header #logo{
+    width:200px;
+    height:80px;
+    float:left;
+    line-height: 80px;
+    padding-left: 30px;
+}
+header #logo h1 a{
+    color: #b1fca2;
+}
+header #logo h1 a:hover{
+    color:#f1f1f1;
+}
+header nav{
+    width:700px;
+    height:80px;    
+    float:right;
+    line-height: 80px;
+}
+header nav li:hover{
+    background-color: #b1fca2;
+
+}
+header nav li a:hover{
+    color:black;
+}
+header nav ul{
+    padding-left: 200px;
+}
+header nav ul li{
+    float:left;
+}
+header nav ul li a{
+    display:block;
+    padding:0 30px;
+}
