@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 배열 함수 
+        let numbers = [1,2,3];
+        // 데이터 추가 
+        // 1. 인덱스로 추가
+        // numbers[3]=4;
+        // document.write(numbers);
+        //2.함수로 추가 .push()
+        numbers.push(50);
+        document.write(numbers);
+        document.write("<br>");
+        
+
+        // 데이터 삭제 .pop() 맨뒤 배열이 사라짐 
+        numbers.pop()
+        document.write(numbers);
+        //데이터 조회 for문 
+        for(let i = 0 ; i < numbers.length ; i++){
+            document.write(numbers[i]+" ")
+        }
+    </script>
+</body>
+</html>

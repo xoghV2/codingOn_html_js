@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성적처리 프로그램</title>
+</head>
+<body>
+    <h2>성적 처리 프로그램</h2>
+
+    <script>
+        
+        let score = prompt("당신의 점수를 입력하세요.");
+        let grade=""; 
+        // 문자 초기화 
+        while(score < 0 || score > 100 ){
+            let score = prompt("당신의 점수를 다시 입력하세요.");
+            break;
+        }
+        if(score < 0 || score > 100){
+            alert(" 점수 범위를 초과했습니다. 1~100점수 범위를 초과했습니다.");
+        
+
+        }else{
+            
+            if(score == 100 && score < 90){
+            grade="A";
+            document.write(grade+ "학점 입니다.<br>");
+            
+            }else if(score >= 80 && score < 89){
+            grade="B";
+            (grade+ "학점입니다.<br>");
+            
+            }else if(score >=70 && score <79 ){
+            grade = "C";
+            document.write(grade+"학점입니다.<br>");
+            }else if (score >= 60 && score <69){
+            grade="D";
+            document.write (grade+ "학점입니다.<br>");
+            }else{
+            grade="F";
+            document.write(grade+"학점입니다.<br>");
+             }
+        document.write("점수는 " +score+ "입니다.<br>");
+        
+        }
+        
+    
+       
+    </script>
+</body>
+</html>

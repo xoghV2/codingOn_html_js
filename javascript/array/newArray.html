@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 예제</title>
+</head>
+<body>
+    <script>
+        // 1에서 10까지의 숫자를 배열에 저장하세요.
+        // 10개의 빈공간 생성 
+        let number = new Array (10);
+        // ,,,,,로나옴 > 빈 배열이라서  >> 값을 저장해야함 
+        // document.write(number);
+        //for문 사용하여 값 저장 
+        for(let i = 0 ; i <number.length ; i++){
+            number[i] = i + 1;
+        }
+        //배열 출력
+        for(let i = 0; i < number.length; i++){
+            document.write(number[i]+" ")
+        }
+    </script>
+</body>
+</html>
