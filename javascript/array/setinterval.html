@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setinteval 함수</title>
+</head>
+<body>
+    <script>
+    //    let greeting = function(){
+    //     document.write("안녕하세요~<br>")
+    //    }
+    //    greeting();
+    // 매개함수 - 콜백 함수 (함수의 매개인자가 함수인 것)
+    // setInterval(greeting, 2000); //괄호가 없는 함수.. 만약 greeting에 ()괄호를 표시하면 안녕하세요만 보임
+
+    //화살표 함수 
+
+       let greeting = () => {
+        document.write("안녕하세요<br>");
+       }
+       setInterval(greeting, 2000);
+
+    </script>
+</body>
+</html>

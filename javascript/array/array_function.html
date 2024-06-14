@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열 함수</title>
+</head>
+<body>
+    <script>
+        let str = "Happy day~!"
+
+
+        //대문자로 = toUpperCase()
+        //소문자로 - toLowerCase()
+        // 문자열객체.함수()
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+        
+        //위치 - indexof()
+        console.log(str.indexOf('p'));
+        console.log(str.lastIndexOf('p'));
+
+        //글자 대체 - replace("old","new") 
+        console.log(str.replace('y','i')) //y를 i로 바꿈 
+
+        //글자 분리 - 구분기호 (공백문자 or , or : 로 분리한다. )
+        //문자열이 배열로 전환  값이 분리가 됨 인덱스로 접근이 가능해진다. 
+        console.log(str.split(' '));
+        console.log(str.split(' ')[0]); //happy
+        console.log(str.split(' ')[1]); //day
+
+        //공백제거 - 좌우의 공백 제거 - trim()
+        let str2 = "   Happy day~!";
+        console.log(str2);
+        console.log(str2.trim());
+
+
+
+
+
+
+    </script>
+    
+    
+</body>
+</html>

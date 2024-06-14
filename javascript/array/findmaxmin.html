@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열의 최대값, 최소값</title>
+</head>
+<body>
+    <h2>배열의 최대값, 최소값 계산</h2>
+    <script>
+        let scores = [70,80,90,65,77,44];
+        let maxVal = scores[0]; // 비교할 기준값. 순서대로 0의 값인 70이랑 다른 숫자들을 비교함 옆으루
+            for(let i=1;i<scores.length; i++){
+                // i 의 값이 1인 이유 0번은 이미 기준값 . length를 사용할땐 = 를 쓰지않음 
+                //기준값과 배열값을 서로 비교하여 큰값을 maxVal에 대입
+                if(maxVal < scores[i]) //score에 있는 값이 maxVal보다 클경우 그 값을 maxVal에 다시 넣음
+                {
+                    maxVal =scores[i];
+                }
+            }
+
+            document.write("최대값 : " + maxVal);
+            //최소값 구하기
+            let minVal = scores[0]; // 비교할 기준값. 순서대로 0의 값인 70이랑 다른 숫자들을 비교함 옆으루
+            for(let i=1; i < scores.length; i++){
+                // i 의 값이 1인 이유 0번은 이미 기준값 . length를 사용할땐 = 를 쓰지않음 
+                //기준값과 배열값을 서로 비교하여 작은값을 minVal에 대입
+                if(minVal > scores[i]) //score에 있는 값이 minVal보다 작을경우 그 값을 minVal에 다시 넣음
+                { // minVal 값보다 scores값이 작아야 minVal에 scores값을 넣으니까  부등호 방향이 > 이렇게 되는거임
+                    // 더 작은 값을 넣어야 하니까 minVal이 더 큰게 scores가 작다는 뜻 >> 그 값을 minVal에 넣어줌
+                    minVal =scores[i];
+                }
+            }
+            document.write("최소값 : " + minVal);
+    </script>
+    <!-- 
+     
+        i=1 70 < 80  maxVal 80
+        i=2 80 < 90  maxVal 90
+        i=3 65 > 90   
+        i=4 77 > 90 
+        i=5 44 > 90 
+
+    -->
+</body>
+</html>
