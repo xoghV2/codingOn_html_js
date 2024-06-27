@@ -1,0 +1,32 @@
+
+
+*{  
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh; 
+/*  vh : view height (1500px / 100 = 15px ) 정가운데에 온다. */
+    display:flex;
+    justify-content: center; 
+    /*  수평정렬 */
+    align-items: center;
+    /* 수직정렬 */
+}
+#container {
+    border : 1px solid #ccc;
+    border-radius: 15px;
+    padding:20px;
+    
+}
+
+#container div{
+    margin:10px;
+}
+#today {
+    font-size: 1.2em;
+}
+#clock{
+    font-size:1.1em;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>태그와 노드 </title>
+</head>
+<body>
+    <div id="parent">
+        Text 
+        <div id="two">
+            div 두번째 Text
+        </div>
+        <div>div 세번째 Text</div>
+    </div>
+    <script>
+        //HTML collection - tag 요소만 포함 
+        //Node List - tag 와 그 하위의 텍스트까지 포함한다. 
+        // 부모만 선택해도  부모 포함 + 그 밑에 있는 div까지 가져옴 (태그)
+        let parent =  document.getElementById("parent");
+        //console.log(parent);
+
+          // 자식 요소만 가져옴 (태그)
+        let children = parent.children;
+      //  console.log(children);
+      
+        //노드 텍스트도 다 포함
+
+        let childNodes = parent.childNodes;
+      //  console.log(childNodes);
+
+        //태그와 텍스트 생성하기 
+        //자바스크립트로 4번재 div만들기 
+        // 자식 추가(태그와 텍스트 ) - 
+        //추가할 부모선택(접근 ) - > 추가할 자식생성 -> 자식을 붙여주기 (연결)
+
+        let child1 = document.createElement("div");
+        child1.innerText = "네번째 Text";
+        parent.appendChild(child1);
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

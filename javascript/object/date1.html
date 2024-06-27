@@ -22,7 +22,22 @@
         // 밀리초로 출력> 그래서 1000으로 나눠줘야 초단위가 됨(1970년 1월1일 자정부터의 시간) 
         document.write("현재까지의 시간 : " + now.getTime()/1000+"<br>");
         
+        let day = Math.round(now.getTime()/(1000*24*60*60));
+        document.write("현재까지의 시간: " + day + "일 <br>");
 
+        //지나온 시간 계산기
+        let today = new Date();
+        console.log(today);
+
+        let theDay = new Date("2024-05-29");
+        console.log(theDay);
+
+        let pastedTime = today.getTime() - theDay.getTime() ;
+        pastedTime = Math.round(pastedTime/(1000*24*60*60));
+        // 밀리초를 day (일 )로 환산하고 반올림 
+        document.write(`개강 후 현재까지 ${pastedTime}일 지났습니다.`);
+        
+        
     </script>
 </body>
 </html>

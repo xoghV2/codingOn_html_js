@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제이쿼리 라이브러리</title>
+    <!-- 제이쿼리 cdn가져오기 실행할 때만 이 링크로 가져옴  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+    <p id="show"></p>
+    <div class="pic">
+
+    </div>
+    <script>
+
+        //자바스크립트 방식 (실행)
+        //윈도우가 실행될 때 데이터가 로드됨
+        // window.onload = function(){
+        //     document.getElementById('show').innerHTML = "안녕";
+        // }
+
+
+        //제이쿼리(실행)환경
+        $(document).ready(function(){
+            // 선택자 (태그, id, class )- $(선택자)안에 기입
+            // text(문자) - innerText
+            // html (태그,문자) - innerHTML
+            // $('#show').text("안녕~");
+            //체이닝 방식 .으로 연결됨 세미콜론이 있는곳이 끝이라고 생각하는건가
+            $('#show').html("<h3>안녕~</h3>") // html 태그도 사용하고싶을경우에 .html
+                      .css("color","red")
+                      .css("font-size","30px")
+                      .css({color:"blue",fontsize:"24px"});
+            $('.pic').html("<img src='images/catsmall.jpg' alt='고양이'>")
+                    // .children().css("border-radius","10px")
+            // $('.pic> img').css("border-radius","20px");
+            $('.pic> img').css("border-radius","20px");
+
+            // .css() 객체 방식 일때는 속성(카멜표기로 한다. )
+            $('.pic> img').css({borderRadius: "20px"});
+            
+        }); 
+
+    </script>
+</body>
+</html>

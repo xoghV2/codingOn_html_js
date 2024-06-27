@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassList 예제</title>
+    <style>
+        .active{
+            background-color: aqua;
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+    <h3>classList로 클래스 스타일 적용하기</h3>
+    <button onclick = "addClass()">add</button>
+    <!-- 클래스 속성을 삭제하는 버튼 -->
+    <button onclick = "removeClass()">remove</button>
+    <!--  -->
+    <button onclick = "toggleClass()">toggle</button>
+
+    <div id="myDiv">
+        <p>안녕하세요</p>
+    </div>
+
+    <script>
+
+        function addClass(){
+            //클래스 선택자 만들기 active라는 클래스르 만들었음 버튼을 누르면 스타일을 준다.
+            // 만들어진 active클래스로 스타일을 주면 html의 태그에 클래스를 따로 주지않아도 스타일을줄수있다.
+           // document.getElementById("myDiv").classList.add("active");
+           // 위에 너무 기니까 객체로 만들어서 좀 보기 편하게 만든것.
+            let list = document.getElementById("myDiv").classList;
+            list.add("active");
+        }
+        function removeClass(){
+           //클래스 선택자 삭제하기 클래스는 그대로 클래스 명만 사라짐> 값만 사라진다.
+            document.getElementById("myDiv").classList.remove("active");
+
+        }
+        //add 와 remove 기능을 합친 속성
+        function toggleClass(){
+           //클래스 선택자 삭제하기 클래스는 그대로 클래스 명만 사라짐> 값만 사라진다.
+            document.getElementById("myDiv").classList.toggle("active");
+        }
+
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>

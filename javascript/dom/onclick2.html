@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 자바스크립트의 객체의 속성인 onclick 이용해서 이벤트 실행 -->
+     <div id="content">
+        <img src="images/ddalgi.jpg" alt="딸기"id="fruit">
+     </div>
+     <script>
+         let fruitImg =  document.querySelector("#fruit");
+         //changePic 함수를 호출 근데왜 괄호가없을까? ?이벤트상에서는 한번만 일어나기때문에 
+         //changePic 함수에서 ()를 하면 함수 맨위로 올라가서 실행됨 , (호이스트)
+
+         //함수정의
+         function changePic(){
+            fruitImg.src = "images/watermelon.png";
+         }
+         //함수 호출
+         fruitImg.onClick = changePic;
+         
+     </script>
+</body>
+</html>
