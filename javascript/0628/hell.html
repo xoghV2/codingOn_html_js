@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>콜백지옥</title>
+</head>
+<body>
+    <script>
+        function color(newColor,delay){
+          return new Promise((resolve)=>{
+                setTimeout(()=>{
+                document.body.style.backgroundColor = newColor;
+                resolve();
+                },delay)
+            })
+        }
+
+        // async await 
+        async function exec(){
+        await color("red",1000)
+        await color("orange",1000)
+        await color("yellow",1000)
+        await color("green",1000)
+        await color("blue",1000)
+        }
+
+        exec();
+
+
+        
+
+
+
+
+
+
+
+
+
+        //then 체이닝 
+        // color("red",1000).then(()=>{
+        //     return color("orange",2000);
+        // }).then(()=>{
+        //     return color("yellow",1000);
+        // }).then(()=>{
+        //     return color("green",2000);
+        // }).then(()=>{
+        //     return color("blue",2000);
+        // })
+        
+    //     function getColor(abc){
+    //     setTimeout(()=>{
+    //         document.body.style.backgroundColor = ' red';
+    //         setTimeout(()=>{
+    //             document.body.style.backgroundColor = 'orange';
+    //             setTimeout(()=>{
+    //                 document.body.style.backgroundColor = ' yellow';
+    //                 setTimeout(()=>{
+    //                     document.body.style.backgroundColor = 'green';
+    //                     setTimeout(()=>{
+    //                         document.body.style.backgroundColor='blue';
+    //                     },2000)
+    //                 },2000)
+    //             },2000)
+    //         },2000)
+    //     },2000)
+    // }
+        //함수하나에 실행하는거 
+
+        
+
+    </script>
+</body>
+</html>
