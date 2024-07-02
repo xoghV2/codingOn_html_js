@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejs</title>
+</head>
+<body>
+    <%- include('header.ejs') %>
+    <%# include('연결하고싶은 파일') %>
+    <%# ejs는 주석도 인식하기때문에 #을 붙여서 써야해요 %>
+    <h1>Hello Ejs</h1>
+    <ul>
+        <%  for (let i=0; i < 5; i++){ %>
+
+            <li>안녕</li>
+
+        <% } %>
+    </ul>
+    <h1><%= name %></h1>
+    <!--
+     데이터 하나만 보내줄 때 <%=  %> 
+     ejs 안의 객체안의 데이터를 보낼 때 키값을 
+     똑같이 줘야 가져올 수 있다.    
+    
+   
+</body>
+</html>
